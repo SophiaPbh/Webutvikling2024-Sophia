@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettsidens tittel</title>
+</head>
+<body>
+    <header>
+        <h1>Innhold</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Navigasjonslenke 1</a></li>
+                <li><a href="#">Navigasjonslenke 2</a></li>
+                <li><a href="#">Navigasjonslenke 3</a></li>
+                <li><a href="#">Navigasjonslenke 4</a></li>
+            </ul>
+        </nav>
+        <p>Trykk <a href="#">her</a>for å lese ekstra innhold</p>
+        </header>
+        <main>
+        <form method="post">
+            <label for="navn">Navn:</label>
+            <input type="text" name="navn" id="navn" minlength="2" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+            <label>
+                Emne:
+                <input type="text" name="telefonnummer" pattern="[0-9]{8,12}" required>
+            </label>
+            <label for="dato">Dato</label>
+            <input type="date" id="dato" name="dato" max="2023-12-31" required />
+        <label>
+                Mann
+                <input type="radio" name="valg" required>
+            </label>
+            <label>
+                Kvinne
+                <input type="radio" name="valg" required>
+            </label>
+            <label>
+            Annet
+            <input type="radio" name="valg" required>
+            </label>
+            <input type="submit" value="Send melding">
+        <label>
+            Land
+            <select name="land">
+                <option value="Norge">Pizza</option>
+                <option value="Sverige">Sushi</option>
+                <option value="Danmark">Kebab</option>
+            </select>
+        </label>
+        <fieldset>
+            <legend>Avkrysningsboks</legend>
+              <input type="checkbox" id="kryss" name="kryss" required />
+              <label for="kryss">Vil følge personvernreglene</label>
+              <input type="checkbox" id="kry" name="kry" required />
+              <label for="kry">Vil ikke følge personvernregler</label>
+          </fieldset>
+          <label>
+          <input type="submit">
+        </label>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                <input type="submit">
+              </form>
+            <form action="index.html">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <input type="submit">
+              </form>
+              <label>
+              <input type="number" min="18" max="99" required>    
+            </label>   
+            <section>    
+        <h2>Overskrift for alle artiklene</h2>
+            <article>
+                <h2>Overskrift for artikkelen</h2>
+                <p>Artikkeltekst</p>
+            </article>
+            <article>
+                <h2>Overskrift for artikkelen</h2>
+                <p>Artikkeltekst</p>
+            </article>
+            <article>
+                <h2>Overskrift for artikkelen</h2>
+                <p>Artikkeltekst</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Side området</h2>
+            <section>
+                <h3><a href="#">Navnet på nettsiden jeg lenker til</a></h3>
+                <h3><a href="#">Navnet på nettsiden jeg lenker til</a></h3>¨
+                <h3><a href="#">Navnet på nettsiden jeg lenker til</a></h3>
+                <h3><a href="#">Navnet på nettsiden jeg lenker til</a></h3>
+            </section>
+            <section>
+                <h3><a href="#">Navnet på nettsiden jeg lenker til</a></h3>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <h3>Navnet sitt</h3>
+        <p>E-posten sin</p>   
+    </footer>
+</body>
+</html>
