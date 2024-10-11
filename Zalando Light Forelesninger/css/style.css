@@ -16,26 +16,6 @@ h3{font-size: 1.6rem;}
 h4{font-size: 1.4rem;}
 p, a{font-size: 1rem;}
 
-img{
-    width:70%;
-}
-
-#banner{
-    display: flex;
-    flex-wrap: wrap;
-    background-color:#efef;
-    justify-content: space-between;
-}
-
-#banner div{
-    padding: 0.5rem 0rem 2rem 2rem; 
-    width: 30%;
-}
-
-#banner div h2{
-    font-size: 1rem;
-}
-
 #grid-container {
     display: grid; /* Bruker CSS Grid for å sette opp en layout med rader og kolonner */
     grid-template-columns: 1fr 3fr 1fr; /* Definerer en grid med 3 kolonner: 1 del til sidemenyer og 3 deler til hovedinnholdet */
@@ -52,11 +32,22 @@ img{
 #banner {
     display: flex; /* Bruker flexbox for å arrangere innholdet i banneret */
     flex-wrap: wrap; /* Tillater at elementer brytes til neste rad hvis det ikke er plass */
+    background-color:#efef;
+    justify-content: space-between;
+}
+
+#banner div{
+    padding: 0.5rem 0rem 2rem 2rem; 
+    width: 30%;
+}
+
+#banner div h2{
+    font-size: 1rem;
+}
     
     img {
         max-width: 70%; /* Bildet i banneret vil ikke overstige 70% av containerens bredde */
     }
-}
 
 main {
     grid-column-start: 2;
