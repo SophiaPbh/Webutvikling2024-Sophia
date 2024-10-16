@@ -1,0 +1,21 @@
+.flex-container-center{
+display:flex;
+justify-content: center;
+align-items: center;
+height:100%;
+}
+
+@mixin box($width, $height, $pad, $bradius){
+    width: 100%;
+    max-width:$width;
+    height: $height;
+    padding:$pad;
+    border-radius:$bradius;
+}
+
+@mixin flexbox($direction, $wrap, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
