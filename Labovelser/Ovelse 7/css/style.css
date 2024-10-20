@@ -1,0 +1,165 @@
+html {
+    font-size:calc(1em + 1vw);
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{font-size: 1rem;}
+h2{font-size: 0.5rem;}
+h3{font-size: 0.3rem;}
+h4{font-size: 0.7rem;}
+p, a{font-size: 0.5rem;}
+
+#logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center; 
+    text-decoration: none;
+    flex-direction:column;
+    color:#000;
+}
+
+ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center; 
+    text-decoration: none;
+    flex-direction:column;
+    color:#000;
+}
+
+header section{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center; 
+        text-decoration: none;
+        flex-direction:column;
+        color:#000;
+    }
+
+section article{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center; 
+    text-decoration: none;
+    flex-direction:column;
+}
+
+section h2, p, a{
+    align-content:center; 
+    justify-content:center;
+}
+
+    img {
+        max-width: 70%;
+    }
+
+    #change-order{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center; 
+        text-decoration: none;
+        flex-direction:column;
+        color:#000;
+    }
+
+    #tjenester{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center; 
+        text-decoration: none;
+        flex-direction:column;
+        color:#000;
+    }
+
+    #booking{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center; 
+        text-decoration: none;
+        flex-direction:column;
+        color:#000;    
+    }
+
+    footer{
+        background-color:rgb(21, 18, 18);  
+        color:#fff;
+        font-size:0.5rem;
+    }
+
+    footer section ul i li{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center; 
+        text-decoration: none;
+        flex-direction:column;
+        color:#fff;
+    }
+
+    #footer-logo{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center; 
+        text-decoration: none;
+        flex-direction:column;
+        color:#fff;
+        background-color:rgb(21, 18, 18);  
+    }
+
+    #some i li{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center; 
+        text-decoration: none;
+        flex-direction:column;
+        color:#fff;  
+    }
+
+    
+
+/*DESKTOP*/
+@media only screen and (min-width: 680px) {
+    .fa-burger {
+        display: none; /* Skjuler hamburger-menyikonet på større skjermer */
+    }
+    #menu {
+        display: flex !important; /* Viser hovedmenyen som en flexbox på større skjermer */
+    }
+
+    h3{font-size: 1.4rem;}
+    p, a {font-size: 0.6rem;}
+}
+
+/*MOBIL*/
+@media only screen and (max-width: 1760px) {
+    #menu {
+        display: none; /* Skjuler hovedmenyen på mindre skjermer */
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr; /* Endrer layout til én kolonne på mobil */
+        grid-template-rows: auto auto auto auto; /* Setter fire rader for responsiv oppsett */
+    }
+
+    header, main, aside, footer {
+        grid-column: 1/2; /* Sørger for at alle elementer strekker seg over hele bredden på mindre skjermer */
+    }
+
+    header {
+        grid-row: 1/2; /* Plasserer headeren øverst på siden */
+    }
+    
+    main {
+        grid-row: 2/3; /* Plasserer hovedinnholdet i andre rad */
+    }
+    
+    aside {
+        display: none; /* Skjuler sideinnholdet (aside) på mindre skjermer */
+    }
+    
+    footer {
+        grid-row: 3/4; /* Plasserer fotnoten nederst på siden */
+    }
+}

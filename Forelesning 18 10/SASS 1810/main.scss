@@ -1,0 +1,12 @@
+@use 'fonts' as *;
+@use 'layout' as *;
+
+body{
+    background-color:rgb(46, 83, 139);
+    font-family: $mainFont;
+}
+
+video{
+    width:100%;
+    position:relative;
+}
