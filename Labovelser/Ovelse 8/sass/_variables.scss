@@ -1,0 +1,19 @@
+    $whitewhite: rgb(240, 240, 240);
+
+    .dynapuff-Overskrift {
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: bold;
+        font-variation-settings:
+          "wdth" 100;
+          color: $whitewhite;
+      }
+    
+      .archivo-narrow-Brodtekst {
+        font-family: "Archivo Narrow", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: italic;
+        color: $whitewhite;
+      }

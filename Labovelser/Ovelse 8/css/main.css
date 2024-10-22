@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=DynaPuff:wght@700&display=swap");
+.dynapuff-Overskrift {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  font-variation-settings: "wdth" 100;
+  color: rgb(240, 240, 240);
+}
+
+.archivo-narrow-Brodtekst {
+  font-family: "Archivo Narrow", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(240, 240, 240);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+  height: 100vh;
+  font-family: Dynapuff;
+  background-size: cover;
+}
+
+header {
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+}
+
+main {
+  display: flex;
+}
+main h1 {
+  color: rgb(240, 240, 240);
+}
+main h2 {
+  color: rgb(240, 240, 240);
+}
+main h3 {
+  color: rgb(240, 240, 240);
+}
+
+#welcome-banner {
+  color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 3rem;
+  border-radius: 20px;
+}
+#welcome-banner header {
+  background-image: url("https://picsum.photos/1200/1200");
+}
+
+#categories {
+  color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+#el {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#fashion {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#home {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#news {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#popular {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.scroll-container, #categories, #el, #fashion, #home, #news {
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 3rem;
+  border-radius: 20px;
+  display: flex !important;
+}/*# sourceMappingURL=main.css.map */
